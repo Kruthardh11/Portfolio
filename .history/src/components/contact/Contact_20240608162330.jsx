@@ -2,7 +2,6 @@ import { useRef, useState } from "react";
 import "./contact.scss";
 import { motion, useInView } from "framer-motion";
 import emailjs from "@emailjs/browser";
-import { FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 const variants = {
   initial: {
@@ -39,7 +38,7 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          setSuccess(true);
+          setSuccess(true)
         },
         (error) => {
           setError(true);
@@ -58,22 +57,16 @@ const Contact = () => {
       <motion.div className="textContainer" variants={variants}>
         <motion.h1 variants={variants}>Let’s work together</motion.h1>
         <motion.div className="item" variants={variants}>
-          <h2>Instagram</h2>
-          <a href="https://www.instagram.com/karlsefni_11" target="_blank" rel="noopener noreferrer">
-            <FaInstagram size={30} />
-          </a>
+          <h2>Mail</h2>
+          <span>hello@react.dev</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
-          <h2>LinkedIn</h2>
-          <a href="https://www.linkedin.com/in/kruthardh-tirunahari-bba216264/" target="_blank" rel="noopener noreferrer">
-            <FaLinkedin size={30} />
-          </a>
+          <h2>Address</h2>
+          <span>Hello street New York</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
-          <h2>WhatsApp</h2>
-          <a href="https://wa.me/8096506782" target="_blank" rel="noopener noreferrer">
-            <FaWhatsapp size={30} />
-          </a>
+          <h2>Phone</h2>
+          <span>+1 234 5678</span>
         </motion.div>
       </motion.div>
       <div className="formContainer">
@@ -113,9 +106,9 @@ const Contact = () => {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 4, duration: 1 }}
         >
-          <input type="text" required placeholder="Name" name="name" />
-          <input type="email" required placeholder="Email" name="email" />
-          <textarea rows={8} placeholder="Message" name="message" />
+          <input type="text" required placeholder="Name" name="name"/>
+          <input type="email" required placeholder="Email" name="email"/>
+          <textarea rows={8} placeholder="Message" name="message"/>
           <button>Submit</button>
           {error && "Error"}
           {success && "Success"}

@@ -59,7 +59,7 @@ const Contact = () => {
         <motion.h1 variants={variants}>Let’s work together</motion.h1>
         <motion.div className="item" variants={variants}>
           <h2>Instagram</h2>
-          <a href="https://www.instagram.com/karlsefni_11" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
             <FaInstagram size={30} />
           </a>
         </motion.div>
@@ -71,7 +71,7 @@ const Contact = () => {
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>WhatsApp</h2>
-          <a href="https://wa.me/8096506782" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/yourphonenumber" target="_blank" rel="noopener noreferrer">
             <FaWhatsapp size={30} />
           </a>
         </motion.div>
