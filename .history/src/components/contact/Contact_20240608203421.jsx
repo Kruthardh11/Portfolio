@@ -58,7 +58,7 @@ const Contact = () => {
       <motion.div className="textContainer" variants={variants}>
         <motion.h1 variants={variants}>Let’s work together</motion.h1>
         <motion.div className="item" variants={variants}>
-          <h2>GitHub</h2>
+          <h2>Instagram</h2>
           <a href="https://github.com/Kruthardh11/" target="_blank" rel="noopener noreferrer">
             <FaGithub size={30} />
           </a>

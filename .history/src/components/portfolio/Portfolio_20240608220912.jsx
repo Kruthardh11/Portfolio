@@ -4,11 +4,10 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 
 const items = [
   {
-    id: 4,
-    title: "Internship",
-    img: "https://etimg.etb2bimg.com/thumb/msid-90117156,imgsize-17256,width-1200,height=765,overlay-etbrandequity/marketing/ramky-enviro-rebrands-as-re-sustainability.jpg",
-    desc: "I have gained industry working experience while working as an intern at Re Sustainability ltd. I developed Flutter apps, did some web scraping using python and also fixed bugs in React Js.",
-    pdf: "path/to/internship-certificate.pdf" // Add the path to the PDF
+    id: 1,
+    title: "Anime Web-App",
+    img: "https://private-user-images.githubusercontent.com/110627779/248319734-467968f3-86c8-4d9c-ac6e-df380610549d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTc4NTg5ODcsIm5iZiI6MTcxNzg1ODY4NywicGF0aCI6Ii8xMTA2Mjc3NzkvMjQ4MzE5NzM0LTQ2Nzk2OGYzLTg2YzgtNGQ5Yy1hYzZlLWRmMzgwNjEwNTQ5ZC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjA4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYwOFQxNDU4MDdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03ZTY0NTRmOWUzNWI0ZjAyZjNiN2VhYzY0NmNiZDNmNmU0NTYzNGQyZWVlZTE2OTVlODlmMzkzYWM0ZGIwNGNkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.kxrCbOERTQZrdpuHgB-UGgAOPCvuX0V-aCmlUH_Cqgg",
+    desc: "A Web-App for viewing and bookmarking your favorite anime. Made using React Js, Tailwind CSS, Jikan API. The App is also responsive in design."
   },
   {
     id: 2,
@@ -22,12 +21,12 @@ const items = [
     img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
     desc: "A virtual painting tool which helps paint without touching the keyboard. Made using Python and mediapipe library.",
   },
-  {
-    id: 1,
-    title: "Anime Web-App",
-    img: "https://private-user-images.githubusercontent.com/110627779/248319734-467968f3-86c8-4d9c-ac6e-df380610549d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTc4NTg5ODcsIm5iZiI6MTcxNzg1ODY4NywicGF0aCI6Ii8xMTA2Mjc3NzkvMjQ4MzE5NzM0LTQ2Nzk2OGYzLTg2YzgtNGQ5Yy1hYzZlLWRmMzgwNjEwNTQ5ZC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjA4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYwOFQxNDU4MDdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03ZTY0NTRmOWUzNWI0ZjAyZjNiN2VhYzY0NmNiZDNmNmU0NTYzNGQyZWVlZTE2OTVlODlmMzkzYWM0ZGIwNGNkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.kxrCbOERTQZrdpuHgB-UGgAOPCvuX0V-aCmlUH_Cqgg",
-    desc: "A Web-App for viewing and bookmarking your favorite anime. Made using React Js, Tailwind CSS, Jikan API. The App is also responsive in design."
-  },
+  // {
+  //   id: 4,
+  //   title: "Music App",
+  //   img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  //   desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+  // },
 ];
 
 const Single = ({ item }) => {
@@ -39,32 +38,17 @@ const Single = ({ item }) => {
 
   const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
 
-  const handleButtonClick = () => {
-    if (item.id === 4) {
-      const link = document.createElement('a');
-      link.href = item.pdf;
-      link.download = 'Internship Certificate.pdf';
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    } else {
-      // Handle other button click cases here
-    }
-  };
-
   return (
-    <section>
+    <section >
       <div className="container">
         <div className="wrapper">
           <div className="imageContainer" ref={ref}>
             <img src={item.img} alt="" />
           </div>
-          <motion.div className="textContainer" style={{ y }}>
+          <motion.div className="textContainer" style={{y}}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button onClick={handleButtonClick}>
-              {item.id === 4 ? 'Internship Certificate' : 'See Demo'}
-            </button>
+            <button>See Demo</button>
           </motion.div>
         </div>
       </div>

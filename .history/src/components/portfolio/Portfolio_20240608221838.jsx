@@ -8,7 +8,7 @@ const items = [
     title: "Internship",
     img: "https://etimg.etb2bimg.com/thumb/msid-90117156,imgsize-17256,width-1200,height=765,overlay-etbrandequity/marketing/ramky-enviro-rebrands-as-re-sustainability.jpg",
     desc: "I have gained industry working experience while working as an intern at Re Sustainability ltd. I developed Flutter apps, did some web scraping using python and also fixed bugs in React Js.",
-    pdf: "path/to/internship-certificate.pdf" // Add the path to the PDF
+    
   },
   {
     id: 2,
@@ -39,32 +39,17 @@ const Single = ({ item }) => {
 
   const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
 
-  const handleButtonClick = () => {
-    if (item.id === 4) {
-      const link = document.createElement('a');
-      link.href = item.pdf;
-      link.download = 'Internship Certificate.pdf';
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    } else {
-      // Handle other button click cases here
-    }
-  };
-
   return (
-    <section>
+    <section >
       <div className="container">
         <div className="wrapper">
           <div className="imageContainer" ref={ref}>
             <img src={item.img} alt="" />
           </div>
-          <motion.div className="textContainer" style={{ y }}>
+          <motion.div className="textContainer" style={{y}}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button onClick={handleButtonClick}>
-              {item.id === 4 ? 'Internship Certificate' : 'See Demo'}
-            </button>
+            <button>See Demo</button>
           </motion.div>
         </div>
       </div>
